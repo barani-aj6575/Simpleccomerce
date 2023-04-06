@@ -25,8 +25,3 @@ steps:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx' 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: 'drop'
-      publishLocation: 'Container'
